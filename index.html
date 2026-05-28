@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Job Positions Filled</title>
+  <title>Jobs Closed</title>
 
   <style>
 
@@ -16,7 +16,7 @@
     }
 
     body{
-      background:#f4f7fb;
+      background:#f3f4f6;
       height:100vh;
       display:flex;
       justify-content:center;
@@ -24,80 +24,53 @@
       padding:20px;
     }
 
-    .message-box{
+    .box{
       background:#fff;
-      max-width:850px;
       width:100%;
-      padding:60px;
-      border-radius:20px;
+      max-width:700px;
+      padding:50px 35px;
+      border-radius:16px;
       text-align:center;
-      box-shadow:0 10px 30px rgba(0,0,0,0.08);
-      border:1px solid #e5e7eb;
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
     }
 
     .icon{
-      width:90px;
-      height:90px;
+      width:80px;
+      height:80px;
       background:#2563eb;
       color:#fff;
-      margin:auto;
       border-radius:50%;
       display:flex;
-      align-items:center;
       justify-content:center;
-      font-size:40px;
-      margin-bottom:30px;
+      align-items:center;
+      font-size:35px;
+      margin:0 auto 25px;
     }
 
-    .message-box h1{
-      font-size:42px;
+    h1{
+      font-size:36px;
       color:#111827;
       margin-bottom:20px;
-      line-height:1.3;
     }
 
-    .message-box p{
+    p{
       color:#4b5563;
-      font-size:18px;
-      line-height:1.9;
-      margin-bottom:20px;
+      font-size:17px;
+      line-height:1.8;
     }
 
-    .highlight{
-      color:#2563eb;
-      font-weight:bold;
-    }
+    @media(max-width:600px){
 
-    .notify-btn{
-      display:inline-block;
-      margin-top:20px;
-      background:#2563eb;
-      color:white;
-      text-decoration:none;
-      padding:16px 35px;
-      border-radius:12px;
-      font-size:18px;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    .notify-btn:hover{
-      background:#1d4ed8;
-      transform:translateY(-3px);
-    }
-
-    @media(max-width:768px){
-
-      .message-box{
-        padding:40px 25px;
+      .box{
+        padding:40px 20px;
       }
 
-      .message-box h1{
-        font-size:32px;
+      h1{
+        font-size:28px;
       }
 
-      .message-box p{
-        font-size:16px;
+      p{
+        font-size:15px;
       }
 
     }
@@ -108,37 +81,18 @@
 
 <body>
 
-  <div class="message-box">
+  <div class="box">
 
     <div class="icon">
       ✓
     </div>
 
-    <h1>
-      All Job Positions Have Been Successfully Filled
-    </h1>
+    <h1>All Positions Filled</h1>
 
     <p>
-      Thank you for your interest in applying for our latest job openings.
-      Due to a very high number of applications, all current vacancies for
-      Computer Operator, Excel Operator, Data Entry, Web Designer,
-      Graphic Designer, and Digital Marketing positions have now been filled.
+      All current job openings have been filled successfully.
+      New openings will be available soon.
     </p>
-
-    <p>
-      We are continuously hiring for new opportunities across different
-      departments and locations. Our recruitment team regularly updates
-      new openings based on company requirements.
-    </p>
-
-    <p class="highlight">
-      Submit your details now and we will personally inform you
-      as soon as new job openings become available.
-    </p>
-
-    <a href="#" class="notify-btn">
-      Notify Me For New Openings
-    </a>
 
   </div>
 
